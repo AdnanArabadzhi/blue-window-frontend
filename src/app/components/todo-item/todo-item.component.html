@@ -1,0 +1,11 @@
+<div class="item-container" [ngClass]="{'completed': todo.completed, 'incomplete': !todo.completed}">
+    <div class="flex-item">
+        <label for="name">Name:</label>
+        <label type="text" id="name" >{{todo.name}}</label>
+    </div>
+    <div class="flex-item">
+        <label >{{todo.completed ? 'Completed' : 'Incomplete'}}</label>
+    </div>
+    <button type="button" *ngIf="!todo.completed" (click)="complete()">Complete</button>
+    <button type="button" (click)="delete()">Delete</button>
+</div>

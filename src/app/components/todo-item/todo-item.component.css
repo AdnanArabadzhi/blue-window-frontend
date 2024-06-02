@@ -1,0 +1,28 @@
+.item-container {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: large;
+}
+
+.item-container button {
+  font-weight: 600;
+}
+
+.flex-item {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+button {
+  margin: 2rem;
+}
+
+.completed {
+  background-color: green;
+}
+
+.incomplete {
+  background-color: red;
+}
