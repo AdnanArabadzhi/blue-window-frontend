@@ -1,5 +1,6 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from '@angular/common/http';
+import { environment } from "./environment";
 
 
 @Injectable({
@@ -10,7 +11,7 @@ import { HttpClient } from '@angular/common/http';
     readonly ROOT_URL;
 
     constructor(private http: HttpClient) { 
-      this.ROOT_URL = 'http://localhost:8787';
+      this.ROOT_URL = environment.baseUrl;
     }
   
     getTodos() {
